@@ -81,3 +81,21 @@ function exampleFunction() {
 }
 
 //arrow functions
+const power = (base, exponent) => {
+    let result = 1;
+    for(let count = 0; count < exponent; count++) {
+        result *= base;
+    }
+    return result;
+};
+
+console.log(power(2,3));
+
+//arrow function with single parameter
+const square1 = (x) => { return x*x; };
+const square2 = x => x*x;
+console.log(square1(2));
+console.log(square2(3));
+//arrow function with NO parameters
+const horn = () => { console.log("Peeee Peeeee Peeeee ....")};
+horn();
